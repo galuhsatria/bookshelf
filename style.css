@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #242F9b;
+    color: #fff;
+}
+
+.head_bar{
+    text-align: center;
+    margin-top: 25px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.input_section{
+background: rgba(255, 255, 255, 0.32);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 25px;
+max-width: 500px;
+}
+.input_section h2{
+    text-align: center;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+label{
+    margin-bottom: 10px;
+}
+input{
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+}
+.input_inline{
+    margin-top: 20px;
+}
+.left{
+    background: rgba(255, 255, 255, 0.32);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 25px;
+max-width: 500px;
+}
+
+#bookSubmit, #searchSubmit{
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #232d86;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#bookSubmit{
+    width: 440px;
+}
+
+#searchSubmit{
+    width: 80px;
+    margin-left: 10px;
+}
+.search_section > h2{
+    text-align: center;
+
+}
+
+#searchBook input{
+   font-size: 16px;
+   height:35px;
+   width: 350px;
+
+}
+#searchBook{
+    margin-top: 25px;
+}
+
+.book_shelf {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.9px);
+    -webkit-backdrop-filter: blur(11.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    margin: 16px 0 0 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    color: #232d86;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.9px);
+    -webkit-backdrop-filter: blur(11.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    margin: 16px 0 0 0;
+    padding: 16px;
+    border-radius: 10px;
+    color: #232d86;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .input_section{
+        width: 350px;
+    }
+    .left{
+        width: 350px;
+        margin-top: 25px;
+    }
+
+    #bookSubmit{
+        width: 300px;
+    }
+    #searchBook input{
+        width: 200px;
+    }
+    #searchSubmit{
+        width: 80px;
+        margin-left: 10px;
+    }
+  }
